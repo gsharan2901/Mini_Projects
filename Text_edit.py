@@ -10,7 +10,7 @@ def saveas():
     savelocation = fd.asksaveasfilename()
     file = open(savelocation, "w+")
     file.write(content)
-    file.close()    
+    file.close()
 b = tk.Button(w, text = 'Save As...', command = saveas)
 b.pack()
 w.mainloop()
