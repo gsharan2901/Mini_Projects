@@ -8,7 +8,7 @@ def saveas():
     global txt
     content = txt.get("1.0", "end-1c")
     savelocation = fd.asksaveasfilename()
-    file = open("simple_text", "w+")
+    file = open(savelocation, "w+")
     file.write(content)
     file.close()    
 b = tk.Button(w, text = 'Save As...', command = saveas)
